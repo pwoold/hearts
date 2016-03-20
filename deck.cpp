@@ -21,6 +21,8 @@ void deck::shuffle() {
 
 std::vector<card> deck::dealHand() {
   std::vector<card> hand;
+  // When we deal, we need to both add to our returned vector and remove from
+  // deck
   for (int i = 0; i < 13; ++i) {
     hand.push_back(deckOfCards.back());
     deckOfCards.pop_back();
