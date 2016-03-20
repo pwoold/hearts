@@ -8,7 +8,7 @@ hand::hand() {}
 
 hand::hand(std::vector<card> crds) : cards(crds) {}
 
-void sort()
+void hand::sort()
 {
 	std::sort(cards.begin(), cards.end());
 }
