@@ -6,9 +6,12 @@
 
 class hand
 {
-public:
+private:
 	std::vector<card> cards;
+
+public:
 	void sort();
+	
 	hand();
 	hand(std::vector<card> cards);
 };

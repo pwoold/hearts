@@ -5,12 +5,15 @@
 
 class card
 {
-public:
+private:
 	int value;
 	std::string suit;
+
+public:
+	friend bool operator<(const card& a, const card& b);
+
 	card();
 	card(int value, std::string suit);
-	friend bool operator<(const card& a, const card& b);
 };
 
 #endif
