@@ -3,13 +3,14 @@
 
 #include <string>
 
-class card {
-  int value;
-  std::string suit;
-
- public:
-  card();
-  card(int value, std::string suit);
+class card
+{
+public:
+	int value;
+	std::string suit;
+	card();
+	card(int value, std::string suit);
+	friend bool operator<(const card& a, const card& b);
 };
 
 #endif
