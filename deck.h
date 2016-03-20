@@ -5,6 +5,9 @@
 #include <vector>
 
 class deck {
+ private:
+  std::vector<card> deckOfCards;
+
  public:
   deck();
 

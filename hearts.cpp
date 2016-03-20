@@ -1,22 +1,24 @@
 #include <iostream>
 #include "hand.h"
 
-int main()
-{
-	card card1(7, "Spades");
-	card card2(4, "Hearts");
+std::vector<player> players;
 
-	if (card1 < card2)
-	{
-		std::cout << "7 < 4" << std::endl;
+void initializePlayers() {
+  players.push_back(player("Calebe", 1));
+  players.push_back(player("Phoebe", 2));
+  players.push_back(player("MaxPad", 3));
+  players.push_back(player("JavaBe", 4));
+}
 
-		std::cin.get();
-	}
+void passCards() {}
 
-	else
-	{
-		std::cout << "7 > 4" << std::endl;
+int main() {
+  bool gameOver = false;
+  int round = 1;
 
-		std::cin.get();
-	}
+  initializePlayers();
+
+  while (!gameOver) {
+    passCards();
+  }
 }

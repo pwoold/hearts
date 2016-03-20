@@ -1,7 +1,5 @@
 #include "deck.h"
 
-std::vector<card> deckOfCards;
-
 deck::deck() {
   // Vector of suits
   std::vector<std::string> suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
