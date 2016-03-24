@@ -1,5 +1,8 @@
 #include <iostream>
 #include "hand.h"
+#include "player.h"
+#include <SDL.h>
+
 
 std::vector<player> players;
 
